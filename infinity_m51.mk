@@ -10,6 +10,12 @@ $(call inherit-product, device/samsung/m51/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Infinity-X stuff.                                          
+INFINITY_MAINTAINER := Xenoz
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_BLUR := true
+WITH_GAPPS := false
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_m51
 PRODUCT_DEVICE := m51
