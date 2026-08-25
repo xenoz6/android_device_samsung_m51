@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_m51.mk
+    $(LOCAL_DIR)/lineage_m51.mk
