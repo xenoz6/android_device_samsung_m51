@@ -10,13 +10,15 @@ $(call inherit-product, device/samsung/m51/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Lunaris Stuff
-LUNARIS_BUILD_TYPE := UNOFFICIAL
-TARGET_OPTIMIZED_DEXOPT := true
-WITH_BCR := true
-TARGET_SUPPORTED_REFRESH_RATES := 60
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_DISABLE_MATLOG := true
+# Axion Stuff
+AXION_CAMERA_REAR_INFO := 64,12,5
+AXION_CAMERA_FRONT_INFO := 32
+AXION_MAINTAINER := Xenoz
+AXION_PROCESSOR := Snapdragon_730G
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_AXFX := false
+TARGET_INCLUDES_LOS_PREBUILTS := true
+TARGET_NEEDS_VULKAN_MEDIA_FIX := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_m51
